@@ -20,3 +20,8 @@ m3 = m2[:3]  # array는 슬라이싱하면 얕은 복사됨 -> 같은 주소 참
 m3[0] = 100
 print(m2, m3)
 
+m = np.array([1, 2, 3, 4, 5])
+m2 = m[:3].copy()
+print(m, m2)
+m2[0] = 100
+print(m, m2)
