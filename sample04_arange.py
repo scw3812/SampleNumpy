@@ -13,4 +13,5 @@ arr = np.arange(1, 10, 2)
 print(arr)
 arr = np.arange(1, 10, dtype=np.float)
 print(arr)
-
+arr = np.arange(1, 10, dtype=np.float).reshape((3, 3))  # arange().reshape(튜플)로 arange를 다중차원으로 바꿀 수 있다.
+print(arr)

@@ -5,7 +5,7 @@
 
 import numpy as np
 
-arr = np.zeros(5)  # np.zeros(n) -> 실수 0 n개
+arr = np.zeros(5, dtype=int)  # np.zeros(n) -> 실수 0 n개, dtype=int로 정수 0 가능
 print(arr)
 arr = np.ones(5)  # np.ones(n) -> 실수 1 n개
 print(arr)
@@ -13,3 +13,4 @@ arr = np.empty(10)  # np.empty(n) -> 임의의 실수 n개
 print(arr)
 arr = np.full(5, 100)  # np.full(n, a) -> a n개
 print(arr)
+# 인자로 튜플을 주면 다중차원 가능
