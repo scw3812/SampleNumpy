@@ -19,5 +19,32 @@ arr = np.arange(12)
 print("1차원", arr)
 arr.shape = (3, 4)
 print("2차원", arr)
+arr = np.arange(12).reshape((3, 4))
+print("1차원", arr.flatten())  # flatten()으로 1차원으로 바꿀 수 있다.
+print("1차원", arr.ravel())  # ravel()도 가능
 
-print("1차원", arr)
+arr = np.array([8, 54, 22, 456])
+print("최솟값:", np.min(arr))  # buitin이랑 기능 차이가 있나?
+print("최댓값:", np.max(arr))
+print("최솟값 위치:", np.argmin(arr))
+print("최댓값 위치:", np.argmax(arr))
+
+arr = np.array([1, 2, 3])
+arr2 = np.array([1, 2, 3]) * 2
+print("더하기", np.add(arr, arr2), arr + arr2)
+print("빼기", np.subtract(arr, arr2), arr - arr2)
+print("곱하기", np.multiply(arr, arr2), arr * arr2)
+print("나누기", np.divide(arr, arr2), arr / arr2)
+print("몫", np.floor_divide(arr, arr2), arr // arr2)
+print("나머지", np.mod(arr, arr2), arr % arr2)
+
+arr = np.array([11, 2, 3, 4])
+arr2 = np.array([1, 22, 33, 44])
+print("arr>arr2", np.greater(arr, arr2))
+print("arr>=arr2", np.greater_equal(arr, arr2))
+print("arr<arr2", np.less(arr, arr2))
+print("arr<=arr2", np.less_equal(arr, arr2))
+print("arr==arr2", np.equal(arr, arr2))
+print("arr!=arr2", np.not_equal(arr, arr2))
+print("각 요소별 큰 값:", np.maximum(arr, arr2))
+print("각 요소별 작은 값:", np.minimum(arr, arr2))
